@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
+
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lora", serif;
+  background-color: #f3f3f3;
+  color: #111;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+p,
+li,
+a {
+  font-size: 1.6rem;
+}
+
+h1.title {
+  font-weight: 300;
+}
+
+h1.title > span.bold-title {
+  font-weight: 900;
+}
+
+/* Defaults */
+.section {
+  min-height: 100vh;
+}
+
+.content {
+  width: 60%;
+  min-height: inherit;
+  margin: auto;
+}
+
+/* Intro tyle starts here */
+.content--intro {
+  position: relative;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1.title:hover ~ .bubble {
+  box-shadow: 0 0 20px rgba(25, 25, 25, 0.8);
+  transition: all 0.2s;
+}
+
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  background: #111;
+  font-size: 1.6rem;
+  color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.bubble:hover {
+  box-shadow: 0 0 20px rgba(25, 25, 25, 0.8);
+  transition: all 0.2s;
+}
+
+.bubble-1 {
+  width: 200px;
+  height: 200px;
+  left: 30px;
+  animation: bubble-1-animation 2.4s;
+  animation-iteration-count: infinite;
+}
+
+.bubble-2 {
+  width: 150px;
+  height: 150px;
+  left: 400px;
+  animation: bubble-2-animation 3s;
+  animation-iteration-count: infinite;
+}
+
+.bubble-3 {
+  width: 300px;
+  height: 300px;
+  left: 60%;
+  animation: bubble-3-animation 3.2s;
+  animation-iteration-count: infinite;
+}
+
+.bubble-4 {
+  width: 250px;
+  height: 250px;
+  left: 90%;
+  animation: bubble-4-animation 2.1s;
+  animation-iteration-count: infinite;
+}
+
+.bubble-5 {
+  width: 400px;
+  height: 400px;
+  left: -20%;
+  animation: bubble-5-animation 1.8s;
+  animation-iteration-count: infinite;
+}
+
+.bubble-6 {
+  width: 180px;
+  height: 180px;
+  left: 350px;
+  animation: bubble-6-animation 3s;
+  animation-iteration-count: infinite;
+}
+
+.bubble-7 {
+  width: 220px;
+  height: 220px;
+  left: 80%;
+  animation: bubble-7-animation 2.1s;
+  animation-iteration-count: infinite;
+}
+
+/* Bubble Animations */
+@keyframes bubble-1-animation {
+  0% {
+    top: 10%;
+  }
+  50% {
+    top: 8%;
+  }
+  100% {
+    top: 10%;
+  }
+}
+
+@keyframes bubble-2-animation {
+  0% {
+    top: 15%;
+  }
+  50% {
+    top: 12%;
+  }
+  100% {
+    top: 15%;
+  }
+}
+
+@keyframes bubble-3-animation {
+  0% {
+    top: -10%;
+  }
+  50% {
+    top: -7%;
+  }
+  100% {
+    top: -10%;
+  }
+}
+
+@keyframes bubble-4-animation {
+  0% {
+    top: 25%;
+  }
+  50% {
+    top: 20%;
+  }
+  100% {
+    top: 25%;
+  }
+}
+
+@keyframes bubble-5-animation {
+  0% {
+    top: 70%;
+  }
+  50% {
+    top: 66%;
+  }
+  100% {
+    top: 70%;
+  }
+}
+
+@keyframes bubble-6-animation {
+  0% {
+    top: 79%;
+  }
+  50% {
+    top: 76%;
+  }
+  100% {
+    top: 79%;
+  }
+}
+
+@keyframes bubble-7-animation {
+  0% {
+    top: 66%;
+  }
+  50% {
+    top: 62%;
+  }
+  100% {
+    top: 66%;
+  }
+}
+
+/* Discuss style starts here */
+.content--discuss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.topic {
+  margin-bottom: 2rem;
+}
